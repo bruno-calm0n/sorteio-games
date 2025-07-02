@@ -48,24 +48,6 @@ npm start
 
 O aplicativo estará disponível em `http://localhost:3000`.
 
-## Estrutura de Arquivos
-
-```bash
-sorteio-games/
-├── public/
-│   └── games.json          # Lista de jogos para o sorteio
-├── src/
-│   ├── App.js              # Configuração de rotas e estado de histórico
-│   ├── index.js            # Ponto de entrada React com BrowserRouter
-│   ├── NameSelector.jsx    # Componente principal de sorteio
-│   ├── NameSelector.styles.js # Estilos em Styled-Components (botão, modal, animações)
-│   ├── History.jsx         # Tela de histórico de sorteios
-│   ├── History.styles.js   # Estilos do histórico
-│   └── games.json          # JSON de jogos (alternativa ao public)
-├── package.json
-└── README.md
-```
-
 ## Rotas
 
 - `/` - Tela de sorteio.
