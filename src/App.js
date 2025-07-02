@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import NameSelector from './GameSelector/NameSelector'
+import History from './HistorySort/History'
 
-function App() {
+export default function App() {
+  const [historyList, setHistoryList] = useState([])
+
+  function addToHistory(item) {
+    setHistoryList([item, ...historyList])
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route
+        path="/"
+        element={<NameSelector onAddHistory={addToHistory} />}
+      />
+      <Route
+        path="/history"
+        element={<History historyList={historyList} />}
+      />
+    </Routes>
+  )
 }
-
-export default App;
