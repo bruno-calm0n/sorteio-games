@@ -23,7 +23,7 @@ Um aplicativo React para sortear aleatoriamente um jogo entre uma lista pré-def
 1. Clone este repositório:
 
    ```bash
-   git clone https://seu-repositorio/sorteio-games.git(https://github.com/bruno-calm0n/sorteio-games.git)
+   git clone https://github.com/bruno-calm0n/sorteio-games.git
    ```
 
 2. Acesse a pasta do projeto:
